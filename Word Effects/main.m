@@ -36,8 +36,16 @@ int main(int argc, const char * argv[]) {
             
         } else if ([inputOperation isEqualToString:@"3"]) {
             
-            
-            
+            NSNumber *inputNumber = @([inputString intValue]);
+            if ([inputNumber  isEqual: @(0)]) {
+                
+                NSLog(@"The input entered cannot be converted to a number!");
+                
+            } else {
+                
+                NSLog(@"%@", inputNumber);
+                
+            }
             
         } else if ([inputOperation isEqualToString:@"4"]) {
             
